@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main-container">
-        <h1 class="text-red-600 text-2xl">To Do App</h1>
+    <div class="text-white  w-full h-full bg-black" id="main-container">
+        <h1 class="text-3xl font-bold font-mono flex justify-center">To Do List</h1>
         <div id="input-container">
-            <input placeholder="Task here" type="text" id="inputArea">
-            <button id="addBtn">ADD</button>
+            <input class="ml-28 mt-6 rounded-lg h-12 text-black" placeholder="Task here" type="text" id="inputArea">
+            <button class="-mt-20 ml-5 text-xl font-bold text-purple-800" id="addBtn">ADD</button>
         </div>
-        <div id="states-container">
-            <div id="tasks-container" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>To Do</h1>
+        <div class="grid place-content-center columns-1 mt-3 p-2" id="states-container">
+            <div class="w-72 h-60 rounded-xl bg-gray-500 mb-5" id="tasks-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1 class="flex justify-center font-bold text-xl text-black">To Do</h1>
             </div>
-            <div id="in-proccess" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>In Progress</h1>
+            <div class="w-72 h-60 rounded-xl bg-gray-500 mb-5" id="in-proccess" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1 class="flex justify-center font-bold text-xl text-black">In Progress</h1>
             </div>
-            <div id="finished" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>Finished</h1>
+            <div class="w-72 h-60 rounded-xl bg-gray-500" id="finished" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1 class="flex justify-center font-bold text-xl text-black">Finished</h1>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
